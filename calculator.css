@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background:darkcyan ;
+}
+.container{
+    padding: 10px;
+    background: black;
+    height: 550px;
+    width: 330px;
+    border-radius: 20px;
+    margin-top: 25%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+
+}
+.container .input-box{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-x: scroll;
+}
+.container .input-box::-webkit-scrollbar{
+    display: none;
+}.container .input-box .result{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}.container .input-box input{
+    all: unset;
+    color: grey;
+    position: absolute;
+    right: 25px;
+    bottom: 60px;
+    text-align: right;
+    font-size: 24px;
+}
+  
+.container .btns-box{
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 100%;
+    padding-left: 20px;
+
+}
+.container .btns-box .btn,.container .btns-box .btns,.container .btns-box #ac,.container .btns-box #del-btn{
+    all: unset;
+    width: 50px;
+    height: 50px;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid #24282e;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 21px;
+
+}
+.container .btns-box .with-bg-btn{
+    color: grey;
+    background: black;
+}
+.container .btns-box .shift{
+    position: relative;
+    left: 72px;
+}
+.container .input-box .toggle-btn{
+           height: 400px;
+           width: 400px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: absolute;
+           margin-left: 77px;
+           font-size: 20px;
+           top: -155px;
+           
+}
+.container .input-box .toggle-btn i{ 
+   position: absolute;
+   cursor: pointer;
+}
+.toggle-btn #light-mode-btn{
+        color: grey;
+        
+}
+ .toggle-btn #dark-mode-btn{
+      color: grey;
+      display: none;
+}
+.container .scientific-btns{
+    height: 300px;
+    width: 230px;
+    background: #fcba04;
+    border-radius: 7px;
+    padding: 15px;
+    margin-left: 8px;
+    position: absolute;
+    bottom: 30px;
+    left: -210px;
+    transition: all .2s;
+
+}
+.container .scientific-btns.active{
+    left: 5px;
+}
+
+
+.container .scientific-btns .scien-btn{
+    all: unset;
+    height: 35px;
+    width: 45px;
+    float: left;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 21px;
+    top: -13px;
+    cursor: pointer;
+}
+.container .scientific-btns .pow-btn .pow{
+    position: relative;
+    bottom: .4em;
+    right: .1em;
+}
+.container .scientific-btns .back-btn{
+    all: unset;
+    height: 50px;
+    width: 70px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #fcba04;
+    position: absolute;
+    right: -65px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+.container.light{
+    background: whitesmoke;
+}
+.container.light .input-box .result{
+    color: black;
+}
+
+.container.light .btns-box .btn,.container.light .btns-box .btns,.container .btns-box #ac,.container.light .btns-box #del-btn{
+    color: grey;
+    border-color: wheat;
+    background: white;
+}
